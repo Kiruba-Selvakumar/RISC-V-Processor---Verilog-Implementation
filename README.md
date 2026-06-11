@@ -1,53 +1,53 @@
-# IPA Project (Spring 2025)  
-**Total Marks: 100**  
-**February 6, 2025**  
+# RISC-V Processor Verilog Implementation
 
-## 1 Overall Goal  
-Each group must develop a processor architecture design based on the RISC-V ISA using Verilog. The design should be thoroughly tested to satisfy all the specification requirements using simulations. The project submission must include the following:
+This repository contains a modular Verilog implementation of a RISC-V processor in two versions:
 
-- A report describing the design details of the various stages of the processor architecture, the supported features (including simulation snapshots of the features supported) and the challenges encountered.
-- Verilog code for processor design and testbench.
+- **Sequential processor** (`/seqential/src`)
+- **5-stage pipelined processor** (`/pipelined/src`)
 
-## 2 Specifications  
-The required specifications in the processor design are as follows:
+The project focuses on building and simulating core datapath and control components, then extending them with pipeline hazard handling.
 
-- A bare minimum processor architecture must implement a sequential design.
-- A pipelined processor architecture implementation with a 5-stage pipeline, which includes support for eliminating pipeline hazards.
+## Supported RISC-V Instructions
 
-Your submission should at least have the first design mentioned above in order to get minimal marks. However, your goal should be to submit a design with pipelined architecture.  
+- `add`
+- `sub`
+- `and`
+- `or`
+- `ld`
+- `sd`
+- `beq`
 
-### Important points to notice:  
-- Both the above implementations must execute the following instructions from RISC-V ISA: `add`, `sub`, `and`, `or`, `ld`, `sd`, and `beq`.
+## Repository Structure
 
-## 3 Design Approach  
-The design approach should be modular, i.e., each stage has to be coded as a separate module and tested independently in order to help the integration without too many issues.
+- `/seqential/`
+  - Baseline single-cycle/sequential processor implementation
+  - Includes module sources, instruction/data preload files, and waveform artifacts
+- `/pipelined/`
+  - 5-stage pipelined implementation
+  - Includes forwarding and hazard detection modules, targeted hazard test inputs, and testbenches
+- `/IPA_Project_2025.pdf`, `/IPA_Project_Report.pdf`
+  - Project statement and report documents
 
-## 4 Targets and Evaluation  
-Each group will be evaluated twice during the project - firstly on **Feb 24**. It is expected that you will have finished your sequential implementation by this time.  
-The final evaluation will happen in the **1st week of March** (dates will be announced later).
+## Main Hardware Components
 
-## 5 Suggestions for Design Verification  
-Please adhere to the following verification approaches as much as possible:
+Across both implementations, the design is organized into reusable modules such as:
 
-- You can individually test each stage/module for its intended functionality with module-specific test inputs.
-- Please write an assembly program for any algorithm (e.g., sorting algorithm) using RISC-V ISA and the corresponding encoded instructions and use the encoded instructions to test your integrated design.
-- If possible, you can also think of an automated testbench that will help you to verify your design efficiently, i.e., automatically verify the state of the processor and memory after execution of each instruction in the program.
+- Instruction memory
+- Data memory
+- Register file
+- Instruction decoder / control logic
+- Immediate generator
+- ALU and arithmetic blocks
+- Multiplexer library
+- Pipeline registers (pipelined version)
+- Hazard detection and forwarding units (pipelined version)
 
-## 6 Evaluation  
-The marks will be assigned as follows:
+## Simulation
 
-- **Report** - 10 marks  
-- **Assignment** - 15 marks  
-- **First Evaluation** - 15 marks  
-- **Sequential Design Implementation** - 20 marks  
-- **Pipelined Design Implementation** - 40 marks  
+Typical simulation flow uses Icarus Verilog (`iverilog`) and GTKWave:
 
----  
-**Table of Contents:**  
-- Overall Goal  
-- Specifications  
-- Design Approach  
-- Targets and Evaluation  
-- Suggestions for Design Verification  
-- Evaluation  
+1. Compile the selected testbench (`main.v` or `main_testbench.v`).
+2. Run the generated simulation binary (`vvp`).
+3. Open `output.vcd` in GTKWave if waveform inspection is needed.
 
+> Note: Tool availability depends on your environment (for example, `iverilog` may need to be installed).
