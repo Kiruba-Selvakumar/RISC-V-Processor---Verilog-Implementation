@@ -1,0 +1,78 @@
+[*]
+[*] GTKWave Analyzer v3.3.108 (w)1999-2020 BSI
+[*] Sat Mar 08 23:43:33 2025
+[*]
+[dumpfile] "C:\IIITH\IIIT Assignments\S25\IPA\ipa-s25-project-team-27\pipelined\src\output.vcd"
+[dumpfile_mtime] "Sat Mar 08 23:41:55 2025"
+[dumpfile_size] 601329
+[savefile] "C:\IIITH\IIIT Assignments\S25\IPA\ipa-s25-project-team-27\pipelined\src\output.gtkw"
+[timestart] 0
+[size] 1920 990
+[pos] -187 -184
+*-3.925769 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] processor_tb.
+[sst_width] 288
+[signals_width] 290
+[sst_expanded] 1
+[sst_vpaned_height] 291
+@421
+processor_tb.uut.ALUControl[1:0]
+processor_tb.uut.ALUOp[1:0]
+processor_tb.uut.ALUSrc
+processor_tb.uut.Branch
+processor_tb.uut.IF_ID_write
+processor_tb.uut.IF_ID_write_new
+processor_tb.uut.MemRead
+processor_tb.uut.MemWrite
+processor_tb.uut.MemtoReg
+processor_tb.uut.RegWrite
+processor_tb.uut.alu_out_ExMem[63:0]
+processor_tb.uut.alu_result[63:0]
+processor_tb.uut.alu_result_MemWb[63:0]
+processor_tb.uut.alu_src1[63:0]
+processor_tb.uut.alu_src2[63:0]
+processor_tb.uut.clk
+processor_tb.uut.control_ExMem[5:0]
+processor_tb.uut.control_IdEx[7:0]
+processor_tb.uut.control_IfId[7:0]
+processor_tb.uut.control_MemWb[1:0]
+processor_tb.uut.control_mux_select
+processor_tb.uut.data_mem[63:0]
+processor_tb.uut.immediate[63:0]
+processor_tb.uut.immediate_ExMem[63:0]
+processor_tb.uut.immediate_IdEx[63:0]
+processor_tb.uut.instruction[31:0]
+processor_tb.uut.instruction_IfId[31:0]
+processor_tb.uut.mem_data_MemWb[63:0]
+processor_tb.uut.overflow
+processor_tb.uut.pc_ExMem[63:0]
+processor_tb.uut.pc_IdEx[63:0]
+processor_tb.uut.pc_IfId[63:0]
+processor_tb.uut.pc_in[63:0]
+processor_tb.uut.pc_mux0[63:0]
+processor_tb.uut.pc_mux1[63:0]
+processor_tb.uut.pc_mux_select0
+processor_tb.uut.pc_mux_selectnot
+processor_tb.uut.pc_out[63:0]
+processor_tb.uut.pc_write
+processor_tb.uut.rd_address_ExMem[4:0]
+processor_tb.uut.rd_address_IdEx[4:0]
+processor_tb.uut.rd_address_MemWb[4:0]
+processor_tb.uut.read_data1[63:0]
+processor_tb.uut.read_data2[63:0]
+processor_tb.uut.read_data2_forwarded[63:0]
+processor_tb.uut.rs1_address_IdEx[4:0]
+processor_tb.uut.rs1_data_IdEx[63:0]
+processor_tb.uut.rs2_address_IdEx[4:0]
+processor_tb.uut.rs2_data_IdEx[63:0]
+processor_tb.uut.select_alusrc1[1:0]
+processor_tb.uut.select_alusrc2[1:0]
+processor_tb.uut.temp1_unused
+processor_tb.uut.temp2_unused
+processor_tb.uut.temp3_unused
+processor_tb.uut.temp4_unused
+processor_tb.uut.write_data_mem_ExMem[63:0]
+processor_tb.uut.write_reg[63:0]
+processor_tb.uut.zero
+[pattern_trace] 1
+[pattern_trace] 0

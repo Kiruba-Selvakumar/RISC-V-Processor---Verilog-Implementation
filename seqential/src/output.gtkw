@@ -1,0 +1,62 @@
+[*]
+[*] GTKWave Analyzer v3.3.108 (w)1999-2020 BSI
+[*] Mon Mar 03 20:27:54 2025
+[*]
+[dumpfile] "C:\IIITH\IIIT Assignments\S25\IPA\ipa-s25-project-team-27\seqential\src\output.vcd"
+[dumpfile_mtime] "Mon Mar 03 20:16:45 2025"
+[dumpfile_size] 576838
+[savefile] "C:\IIITH\IIIT Assignments\S25\IPA\ipa-s25-project-team-27\seqential\src\output.gtkw"
+[timestart] 0
+[size] 1920 990
+[pos] -251 -248
+*-3.281912 11 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] processor_tb.
+[sst_width] 288
+[signals_width] 290
+[sst_expanded] 1
+[sst_vpaned_height] 291
+@28
+processor_tb.uut.ALUControl[1:0]
+processor_tb.uut.ALUOp[1:0]
+processor_tb.uut.ALUSrc
+processor_tb.uut.Branch
+processor_tb.uut.MemRead
+processor_tb.uut.MemWrite
+processor_tb.uut.MemtoReg
+processor_tb.uut.RegWrite
+@24
+processor_tb.uut.pc_in[63:0]
+processor_tb.uut.pc_out[63:0]
+processor_tb.uut.alu_out[63:0]
+processor_tb.uut.alu_src1[63:0]
+processor_tb.uut.alu_src2[63:0]
+@28
+processor_tb.uut.clk
+@420
+processor_tb.uut.data_mem_read_data[63:0]
+processor_tb.uut.immediate[63:0]
+@22
+processor_tb.uut.instruction[31:0]
+@420
+processor_tb.uut.left_shift_immediate[63:0]
+@28
+processor_tb.uut.overflow
+@22
+processor_tb.uut.pc_mux0[63:0]
+processor_tb.uut.pc_mux1[63:0]
+@28
+processor_tb.uut.pc_mux_select0
+processor_tb.uut.pc_mux_select1
+@22
+processor_tb.uut.read_data2[63:0]
+@28
+processor_tb.uut.temp1_unused
+processor_tb.uut.temp2_unused
+processor_tb.uut.temp3
+processor_tb.uut.temp4
+@22
+processor_tb.uut.write_reg[63:0]
+@28
+processor_tb.uut.zero
+[pattern_trace] 1
+[pattern_trace] 0
